@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/css/style.css'%}">
+    <title> title
+    </title>
+  </head>
+
+  <body>
+    <div class="body">
+      <section calss="mainbody">
+        <div class="top">
+          <h1 id="h1">Assignment Project Website</h1>
+          <section class = "navigation">
+            <nav>
+              <div class="nav-cont">
+                <ul>
+                  {% block navbars %}
+                  <div id="bx1"><a href="{%url 'home'%}">Home</a></div>
+                  <div id="bx2"><a href="{%url 'catalogue'%}">Catalogue</a></div>
+                  <div id="bx3"><a href="{%url 'datamodel'%}">Datamodel</a></div>
+                  {% endblock %}
+                </ul>
+              </div>
+            </nav>
+          </section>
+        </div>
+      </section>
+      <section>
+        <main>
+                {%block section_1%} {%endblock%}<br>
+                {%block section_2%} {%endblock%}<br>
+                {%block section_3%} {%endblock%}<br>
+
+        </main>
+      </section>
+
+      {% block footer %}
+          <hr><footer> &copy2018 by Md Ashraful Islam. Student at Charls Darwin University.</footer>
+      {% endblock %}<br><br>
+    </div>
+  </body>
+
+</html>

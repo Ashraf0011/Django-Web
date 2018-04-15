@@ -1,0 +1,75 @@
+.body{
+  background: #F4FFFD;
+  min-height: 900px;}
+#h1{
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  font-size: 2em;
+  color: #09BC8A;}
+#h2{
+  text-align: center;
+  color: #09BC8A;
+  font-size: 1.5em;}
+.navigation{
+  display:block;
+  align-self: center;}
+#bx1{
+  color: #f79f79;
+  display: inline;
+  padding: 5px;
+  border-radius:3px;
+  background: #87a0b2;
+  font-size: 1.2em;}
+#bx2{
+  color: #f79f79;
+  display: inline;
+  padding: 5px;
+  border-radius:3px;
+  background: #87a0b2;
+  font-size: 1.2em;}
+#bx3{
+  color: #f79f79;
+  display: inline;
+  padding: 5px;
+  border-radius:3px;
+  background: #87a0b2;
+  font-size: 1.2em;}
+.top {
+  padding: 3px;
+  border-radius: 8px;
+  background: #313D5A;
+  text-align: center;}
+#indexCN {
+  min-height: 600px;
+  position: relative;
+  padding: 1em;
+  text-align: left;
+  border-radius: 5px;}
+#hist_prg{
+  margin: 10px;}
+.history{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  text-align: justify;
+  text-indent: 20px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  padding-left: 15px;
+  padding-right: 15px;}
+.student{
+  font-size: 30px;
+  border-width: thick;
+  text-align: center;}
+#paragraph{
+  font-size: 20px;
+  border-width: thick;}
+table, th, td{
+  border:2px solid black;
+  border-collapse: collapse;}
+table{
+  width:100%;}
+td, th {
+  padding: 6px;}
+th{
+  width:20%;}

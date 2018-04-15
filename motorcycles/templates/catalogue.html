@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+{%block section_1%}
+<div class="bikeslist">
+    <h2 class="page-heading">Catalogue</h2>
+      {% if items %}
+          <table>
+            <thead>
+              <tr>
+                <th style="width:20px;">No.</th>
+                <th style="width:200;">Motorcycle Name</th>
+                <th style="width:300%;">Review</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for bike in items %}
+              <tr>
+                <td>  {{ bike.id }} </td>
+                <td> <a href="{% url 'items' bike.id %}">{{ bike.name }}</a>  </td>
+                <td> {{ bike.review }} </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+            {% else %}
+          <p>No Motorcycles Are Available</p>
+      {% endif %}
+</div>
+{%endblock%}

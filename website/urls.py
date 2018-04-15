@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from motorcycles.views import index,catalogue,items,datamodel
 
 urlpatterns = [
+    url(r'^$', index, name= "home"),
     url(r'^admin/', admin.site.urls),
+    url(r'^catalogue/$', catalogue, name= "catalogue"),
+    url(r'^items/(?P<item_id>[0-9]+)/', items, name= "items"),
+    url(r'^datamodel/$', datamodel, name= "datamodel"),
+
 ]

@@ -1,0 +1,47 @@
+<!this page can be found by searching "home/" or (empty string) " " in url bar.>
+{%extends "base.html"%}
+{% load static %}
+
+{%block section_1%}
+<div id="indexCN">
+  <section class="student">
+    Name: Md Ashraful Islam <br>
+    Student ID: s283091 <br>
+  </section>
+  <section id="paragraph">
+    <h2>About Topic:</h2>
+    <p>I have chosen <b>"Motorcycle"</b> as my website topic, because I love riding motorbikes.<br>
+      This is a popular ride anomg not only young genaration but also elderly people in Australia. I think this topic can be interesting one.
+      Good contents are avilable on manufacturer website, which is another reason to chose this topic.
+    </p>
+    <h3>History of Motorcycles</h3>
+      <section class="history">
+        <p id = "hist_prg">
+          Motorcycle is one of the enjoyable transport midium this days. The first
+          ever motorcycle was designed and built by the <strong>German inventors Gottlieb
+          Daimler and Wilhelm Maybach in Bad Cannstatt, <b>Germany in 1885</b></strong>. In 1894,
+          Hildebrand & Wolfmüller became the first series production motorcycle,
+          At the turn of the 19th century the first major mass-production firms
+          were set up. In 1898, <strong><i>Triumph Motorcycles</i></strong> in England began
+          producing motorbikes, and by 1903 it was producing over 500 bikes.
+          Other British firms were Royal Enfield, Norton and Birmingham Small Arms
+          Company who began motorbike production in 1899, 1902 and 1910, respectively.
+          <strong><em>During the First World War,</em> </strong> motorbike production was greatly
+          ramped up for the war.American company Harley-Davidson
+          was devoting over 50% of its factory output toward military contract
+          by the end of the war. The British company Triumph Motorcycles sold more
+          than 30,000 of its Triumph Type H model to allied forces during the war.
+          With the rear wheel driven by a belt, the Model H was fitted with a 499 cc
+          (30.5 cu in) air-cooled four-stroke single-cylinder engine.
+          It was also the first Triumph without pedals.
+        </p>
+        <img src="{% static '/images/firstbike.png' %}" alt="a picture of firstbike models" height="350" width="550">
+        </section>
+
+  </section>
+</div>
+<br>
+{%endblock%}
+{%block section_2%}{%endblock%}<br>
+
+{%block section_3%}{%endblock%}<br>

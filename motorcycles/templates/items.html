@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+
+{%block section_1%} {%endblock%}<br>
+
+{%block section_2%}
+<div class="bikeslist">
+    <h2 class="page-heading">Item Details Page</h2>
+    <div class="bikes">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width:10px;">ID</th>
+                  <th style="width:40px;">Motorcycle Name</th>
+                  <th style="width:40px;">Class Name</th>
+                  <th style="width:40px;">Top Speed</th>
+                  <th style="width:40px;">Release Date</th>
+                  <th style="width:40px;">Designer Name</th>
+                  <th style="width:40px;">Designer Nationality</th>
+                  <th style="width:40px;">email</th>
+                  <th style="width:40px;">Review</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% if items %}
+                <tr>
+                  <td> {{ items.id }} </td>
+                  <td> {{ items.name }} </a></td>
+                  <td> {{ items.className }} </td>
+                  <td> {{ items.topSpeed }} </td>
+                  <td> {{ items.releaseDate }} </td>
+                  <td> {{ items.designer_name }} </td>
+                  <td> {{ items.nationality }} </td>
+                  <td> {{ items.email }} </td>
+                  <td> {{ items.review }} </td>
+                </tr>
+                {% endif %}
+              </tbody>
+            </table>
+            <p>not found</p>
+    </div>
+
+</div>
+{%endblock%}
